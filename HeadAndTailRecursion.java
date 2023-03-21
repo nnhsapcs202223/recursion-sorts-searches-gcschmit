@@ -17,7 +17,7 @@ public class HeadAndTailRecursion
         if(str.length() == 0)
             return;
 
-        System.out.print(str.charAt(0));
+        System.out.print(str.substring(0, 1));
 
         tail(str.substring(1));
     }
@@ -29,6 +29,6 @@ public class HeadAndTailRecursion
         
         head(str.substring(1));
 
-        System.out.print(str.charAt(0));
+        System.out.print(str.substring(0, 1));
     }
 }
