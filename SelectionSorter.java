@@ -13,7 +13,10 @@ public class SelectionSorter
       for (int i = 0; i < a.length - 1; i++)
       {  
          int minPos = minimumPosition(a, i);
-         ArrayUtil.swap(a, minPos, i);
+         
+         int temp = a[minPos];
+         a[minPos] = a[i];
+         a[i] = temp;
       }
    }
 
